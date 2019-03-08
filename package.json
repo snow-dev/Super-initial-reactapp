@@ -6,6 +6,8 @@
     "asynkstorage": "^1.0.8",
     "axios": "^0.18.0",
     "cloudinary-react": "^1.1.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.10.0",
     "flatpickr": "^4.5.4",
     "immutable": "^4.0.0-rc.12",
     "lodash": "^4.17.11",

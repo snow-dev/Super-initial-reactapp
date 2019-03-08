@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import './resources/styles/App.css';
+import HomeContainer from './containers/Home/HomeContainer';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <h2>Hola mundo :)</h2>
+          <HomeContainer/>
         </header>
       </div>
     );
