@@ -5,30 +5,32 @@ import React from 'react';
 import {mount} from 'enzyme';
 
 /** Components section import **/
-import HomeContainer from '../components/Home/HomeContainer';
-import Root from '../Root';
-import App from '../App';
+import Root from '../../../Root';
+import HomeComponent from '../HomeComponent';
 
-describe('App', () => {
+describe('${0}', () => {
   let wrapper;
 
+  /**
+   * For each test, we wrap component with Root (Provider).
+   */
   beforeEach(() => {
     wrapper = mount(
       <Root>
-        <App/>
+        <HomeComponent/>
       </Root>
     );
   });
 
+  /**
+   * After each test we unmount component, to avoid garbage on the next tests.
+   */
   afterEach(() => {
     wrapper.unmount();
   });
 
   it('should render a div', () => {
-    expect(wrapper.find('div').length).toEqual(1);
+    expect(wrapper.find('h2').length).toEqual(1);
   });
 
-  it('should render HomeContainer', () => {
-    expect(wrapper.find('HomeContainer').length).toEqual(1);
-  });
 });
