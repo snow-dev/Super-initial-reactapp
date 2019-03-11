@@ -27,7 +27,7 @@ class HomeComponent extends Component {
 
   render() {
     return (
-      <h2>home-component </h2>
+      <h2>{this.props.translate('home.hello')}</h2>
     );
   }
 }

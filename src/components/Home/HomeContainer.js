@@ -8,6 +8,7 @@ import PropTypes from 'prop-types';
 /**  Redux section import **/
 import {withLocalize} from 'react-localize-redux';
 import {connect} from 'react-redux';
+import HomeComponent from './HomeComponent';
 
 /** Language imports **/
 
@@ -24,10 +25,9 @@ export class HomeContainer extends Component {
     autoBind(this);
   }
 
-
   render() {
     return (
-      <h2>home-container </h2>
+      <HomeComponent/>
     );
   }
 }
