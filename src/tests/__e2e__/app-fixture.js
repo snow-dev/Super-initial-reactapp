@@ -1,34 +1,20 @@
 import {Selector} from 'testcafe';
 
-class TodoPage {
+class App {
   constructor() {
-    this.input = Selector('.new-todo')
-    this.editInput = Selector('.edit')
-    this.todoItems = Selector('.todo-list li')
-    this.firstTodoItem = Selector('.todo-list li:nth-child(1)')
-    this.completedTodos = Selector('.completed')
-    this.completeAll = Selector('.toggle-all')
-    this.deleteCompleted = Selector('.clear-completed')
-    this.showActiveLink = Selector('[href="#/active"]')
-    this.showCompletedLink = Selector('[href="#/completed"]')
+    this.header = Selector('.App-header');
   }
 }
 
-const todoPage = new TodoPage();
+const app = new App();
 
-fixture('Test TodoMVC App')
-  .page('http://todomvc.com/examples/vanillajs/');
+fixture('App test')
+  .page('http://localhost:3000/');
 
-test('Create todo', async t => {
+test('Should have a header', async t => {
   await t
-    .typeText(todoPage.input, 'write blog post about JS')
-    .pressKey('enter');
-
-  await t
-    .expect(todoPage.todoItems.count)
+    .expect(app.header.count)
     .eql(1);
-
-  await t
-    .expect(todoPage.firstTodoItem.textContent)
-    .contains('write blog post about JS');
 });
+
+
