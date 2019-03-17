@@ -33,3 +33,4 @@ describe('${0}', () => {
     expect(wrapper.find('h2').length).toEqual(1);
   });
 });
+

@@ -38,7 +38,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "unit:test": "react-scripts test",
-    "e2e:test": "./node_modules/.bin/testcafe chrome src/tests/__e2e__/",
+    "e2e:test": "./node_modules/.bin/testcafe firefox src/tests/__e2e__/",
     "eject": "react-scripts eject",
     "start:testing": "env-cmd .env.testing npm run start",
     "start:production": "env-cmd .env.production npm run start"

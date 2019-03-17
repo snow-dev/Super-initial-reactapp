@@ -9,7 +9,7 @@ class App {
 const app = new App();
 
 fixture('App test')
-  .page('http://localhost:3000/');
+  .page('https://localhost:3000/');
 
 test('Should have a header', async t => {
   await t

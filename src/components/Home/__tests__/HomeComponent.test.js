@@ -32,5 +32,4 @@ describe('${0}', () => {
   it('should render a div', () => {
     expect(wrapper.find('h2').length).toEqual(1);
   });
-
 });

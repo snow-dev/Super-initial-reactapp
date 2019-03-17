@@ -40,7 +40,7 @@ This makes the test very quick to execute, but it doesn't guarantee that your ap
 
 There are a lot of testing libraries, all of them are awesome and offer a lot of tools for testing, but we can't use all of them, so we decide use the following stack:
 
-1.  [__Jest__](https://jestjs.io/)
+1. [__Jest__](https://jestjs.io/)
 2. [__Enzyme__](https://airbnb.io/enzyme/)
 3. [__TestCafe__](https://github.com/DevExpress/testcafe) 
 

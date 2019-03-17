@@ -9,7 +9,7 @@ class HomeContainer {
 const homeContainer = new HomeContainer();
 
 fixture('Test HomeContainer')
-  .page('http://localhost:3000/');
+  .page('https://localhost:3000/');
 
 test('Show a title', async t => {
   await t
